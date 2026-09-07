@@ -1,0 +1,113 @@
+:root {
+    --accent: #0d6efd;
+    --bg-dark: #ffffff;
+    --card-bg: #f8f9fa;
+    --card-border: #dee2e6;
+    --text-muted: #6c757d;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+#mainNavbar{
+  background-color: black;
+  box-shadow: 0 0 10px black;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px black;
+  transition: opacity 0.2s ease;
+}
+.profile-card {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 20px;
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, border-color 0.5s ease, box-shadow 0.3s ease;
+}
+.nav-item:hover{
+  border:1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px blue;
+  
+}
+.profile-card-inner {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.profile-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.profile-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 25px black;
+}
+
+.profile-card:hover img {
+    transform: scale(1.05);
+}
+.timeline {
+    position: relative;
+    border-left: 2px solid var(--card-border);
+    margin-left: 1rem;
+    padding-left: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(6px);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.55rem;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg-dark);
+    box-shadow: 0 0 10px var(--accent);
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: var(--accent);
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+.card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 10px blue;
+}
+.card {
+    border-color: var(--accent);
+    box-shadow: 0 0 5px black
+    
+}
+.footer{
+  background-color: black;
+  box-shadow: 0 0 15px black;
+}
